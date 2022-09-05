@@ -10,4 +10,5 @@ print("Int Value of Text: ",plaintext_int)
 print("Int Value of Key: ",key_int)
 xored_hex = hex(plaintext_int^key_int)
 print("XORED: ", xored_hex)
+# For 75 years the Australian Signals Directorate has brought together people with the skills, adaptability and imagination to operate in the slim area between the difficult and the impossible.
 print("OUTPUT: ", bytes.fromhex('%x' % (plaintext_int^key_int)).decode ('utf-8'))

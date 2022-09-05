@@ -6,6 +6,7 @@ BINARY_CODE = "10000011010011100010010000111100010111001001100100110000011001001
 # Spliting  into 7-bit chunks for ASCII conversion.
 char_list = [BINARY_CODE[i:i+7] for i in range(0, len(BINARY_CODE), 7)]
 print("Ascii text: ")
+# ASDCbr2022
 for char in char_list:
     n = int(char, 2)
     print(chr(n), end='')
@@ -13,4 +14,5 @@ for char in char_list:
 MORSE_CODE = ".---- ----. ....- --...  -.. ... -... .- .-.. -... . .-. - .--. .- .-. -.-"
 
 print("\nMorse decoded: ")
+# 1947 DSBALBERTPARK
 print(morse_code.decode(MORSE_CODE))
